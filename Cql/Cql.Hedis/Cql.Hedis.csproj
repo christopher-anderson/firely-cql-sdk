@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\cql-sdk.props" />
+
+	<PropertyGroup>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Hl7.Cql.Hedis</RootNamespace>
+		<AssemblyName>Hl7.Cql.Hedis</AssemblyName>
+		<Product>CQL engine binding for HEDIS DTOs</Product>
+		<Description>Support package for Hl7.Cql. Contains bindings to use lightweight HEDIS FHIR DTOs as an alternative to the full Firely SDK POCOs.</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Cql.Runtime\Cql.Runtime.csproj" />
+		<ProjectReference Include="..\..\..\firely-net-sdk\Ncqa.Hedis.Core.2025\Ncqa.Hedis.Core.2025.csproj" />
+	</ItemGroup>
+
+</Project>
