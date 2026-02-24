@@ -8,9 +8,9 @@
 
 using Hl7.Cql.Conversion;
 using Hl7.Cql.Primitives;
-using Ncqa.Hedis.Core._2025;
+using Ncqa.Hedis.Core;
 using System.Text;
-using H = Ncqa.Hedis.Core._2025;
+using H = Ncqa.Hedis.Core;
 
 namespace Hl7.Cql.Hedis;
 

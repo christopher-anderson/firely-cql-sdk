@@ -8,7 +8,7 @@
 
 using Hl7.Cql.Abstractions;
 using Hl7.Cql.Comparers;
-using Ncqa.Hedis.Core._2025;
+using Ncqa.Hedis.Core;
 
 namespace Hl7.Cql.Hedis.Comparers;
 

@@ -7,7 +7,7 @@
  */
 
 using Hl7.Cql.Runtime;
-using Ncqa.Hedis.Core._2025;
+using Ncqa.Hedis.Core;
 using System.Reflection;
 
 namespace Hl7.Cql.Hedis;
@@ -37,13 +37,13 @@ public class HedisTypeResolver : BaseTypeResolver
     internal override IEnumerable<Assembly> ModelAssemblies => new[] { typeof(Patient).Assembly };
 
     /// <inheritdoc/>
-    internal override IEnumerable<string> ModelNamespaces => new[] { "Ncqa.Hedis.Core._2025" };
+    internal override IEnumerable<string> ModelNamespaces => new[] { "Ncqa.Hedis.Core" };
 
     /// <inheritdoc/>
     internal override IEnumerable<(string alias, string type)> Aliases => base.Aliases
         .Concat(new[]
         {
-            ("Range", typeof(Ncqa.Hedis.Core._2025.Range).FullName!),
+            ("Range", typeof(Ncqa.Hedis.Core.Range).FullName!),
         });
 
     /// <inheritdoc/>
@@ -115,7 +115,7 @@ public class HedisTypeResolver : BaseTypeResolver
         // Register all HEDIS DTO types from the assembly
         var hedisAssembly = typeof(Patient).Assembly;
         var hedisTypes = hedisAssembly.GetExportedTypes()
-            .Where(t => t.IsClass && !t.IsAbstract && t.Namespace == "Ncqa.Hedis.Core._2025");
+            .Where(t => t.IsClass && !t.IsAbstract && t.Namespace == "Ncqa.Hedis.Core");
 
         foreach (var type in hedisTypes)
         {

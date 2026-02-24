@@ -11,7 +11,7 @@ using Hl7.Cql.Comparers;
 using Hl7.Cql.Operators;
 using Hl7.Cql.Primitives;
 using Hl7.Cql.ValueSets;
-using Ncqa.Hedis.Core._2025;
+using Ncqa.Hedis.Core;
 using System.Reflection;
 
 namespace Hl7.Cql.Hedis;
