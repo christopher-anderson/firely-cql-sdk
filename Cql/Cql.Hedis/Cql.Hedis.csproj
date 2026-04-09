@@ -12,7 +12,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Cql.Runtime\Cql.Runtime.csproj" />
-		<ProjectReference Include="..\..\firely-net-sdk\Ncqa.Hedis.Core\Ncqa.Hedis.Core.csproj" />
 	</ItemGroup>
 
 </Project>

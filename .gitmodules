@@ -1,0 +1,4 @@
+[submodule "submodules/firely-net-sdk"]
+	path = submodules/firely-net-sdk
+	url = https://github.com/christopher-anderson/firely-net-sdk.git
+	branch = feature/profile-code-generator-5.13
