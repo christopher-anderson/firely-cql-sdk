@@ -10,13 +10,9 @@
 		<Description>Support package for Hl7.Cql. Contains the bindings to use Firely's .NET SDK Pocos for FHIR.</Description>
 	</PropertyGroup>
 
-
 	<ItemGroup>
-		<PackageReference Include="Hl7.Fhir.Base" Version="$(FirelySdkVersion)" />
-		<PackageReference Include="Hl7.Fhir.R4" Version="$(FirelySdkVersion)" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<ProjectReference Include="..\..\..\Ncqa.DigitalSolutions.Healthlake\src\submodules\submodules\firely-net-sdk\src\Hl7.Fhir.Base\Hl7.Fhir.Base.csproj" />
+		<ProjectReference Include="..\..\..\Ncqa.DigitalSolutions.Healthlake\src\submodules\submodules\firely-net-sdk\src\Hl7.Fhir.R4\Hl7.Fhir.R4.csproj" />
 		<ProjectReference Include="..\Cql.Runtime\Cql.Runtime.csproj" />
 		<InternalsVisibleTo Include="CoreTests" Key="$(LibraryPKHash)" />
 		<InternalsVisibleTo Include="Hl7.Cql.Packaging" Key="$(LibraryPKHash)" />

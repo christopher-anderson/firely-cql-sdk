@@ -12,10 +12,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Hl7.Fhir.R4" Version="$(FirelySdkVersion)" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<ProjectReference Include="..\CodeGeneration.NET\CodeGeneration.NET.csproj" />
 		<ProjectReference Include="..\Cql.Compiler\Cql.Compiler.csproj" />
 		<ProjectReference Include="..\Cql.Firely\Cql.Firely.csproj" />

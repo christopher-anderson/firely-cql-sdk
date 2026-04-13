@@ -27,12 +27,11 @@
 		<PackageReference Include="MSTest.TestFramework" Version="3.3.1" />
 		<PackageReference Include="MSTest.TestAdapter" Version="3.3.1" />
 		<PackageReference Include="coverlet.collector" Version="6.0.2" />
-		<PackageReference Include="Hl7.Fhir.Base" Version="$(FirelySdkVersion)" />
-		<PackageReference Include="Hl7.Fhir.R4" Version="$(FirelySdkVersion)" />
 		<PackageReference Remove="Microsoft.CodeAnalysis.PublicApiAnalyzers" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\..\..\Ncqa.DigitalSolutions.Healthlake\src\submodules\submodules\firely-net-sdk\src\Hl7.Fhir.R4\Hl7.Fhir.R4.csproj" />
 		<ProjectReference Include="..\CodeGeneration.NET\CodeGeneration.NET.csproj" />
 		<ProjectReference Include="..\Cql.Compiler\Cql.Compiler.csproj" />
 		<ProjectReference Include="..\Cql.Firely\Cql.Firely.csproj" />
