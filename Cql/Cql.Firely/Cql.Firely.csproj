@@ -11,8 +11,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\Ncqa.DigitalSolutions.Healthlake\src\submodules\submodules\firely-net-sdk\src\Hl7.Fhir.Base\Hl7.Fhir.Base.csproj" />
-		<ProjectReference Include="..\..\..\Ncqa.DigitalSolutions.Healthlake\src\submodules\submodules\firely-net-sdk\src\Hl7.Fhir.R4\Hl7.Fhir.R4.csproj" />
+		<ProjectReference Include="..\..\submodules\firely-net-sdk\src\Hl7.Fhir.Base\Hl7.Fhir.Base.csproj" />
+		<ProjectReference Include="..\..\submodules\firely-net-sdk\src\Hl7.Fhir.R4\Hl7.Fhir.R4.csproj" />
 		<ProjectReference Include="..\Cql.Runtime\Cql.Runtime.csproj" />
 		<InternalsVisibleTo Include="CoreTests" Key="$(LibraryPKHash)" />
 		<InternalsVisibleTo Include="Hl7.Cql.Packaging" Key="$(LibraryPKHash)" />
