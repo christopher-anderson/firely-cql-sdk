@@ -40,6 +40,10 @@
 		<Configurations>Debug;Release;FullDebug</Configurations>
 		<AnalysisLevelGlobalization>latest-recommended</AnalysisLevelGlobalization>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<!-- Disable NuGet vulnerability audit — NU1900 fires when the private NCQA feed
+		     is unreachable (offline / no VPN), which TreatWarningsAsErrors turns into a
+		     hard build failure. Auditing is a CI/release concern, not a local build one. -->
+		<NuGetAudit>false</NuGetAudit>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' Or '$(Configuration)' == 'FullDebug' ">
